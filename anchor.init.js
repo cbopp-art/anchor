@@ -4,7 +4,7 @@
 	 * Automatically executed if DOM is ready
 	 */
 	$(function() {
-		$('.jump-to-section').jumpToSection('init');
+		$('.anchor').anchor('init');
 	});
 	
 }(jQuery));
