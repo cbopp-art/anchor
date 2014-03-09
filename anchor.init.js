@@ -4,7 +4,7 @@
 	 * Automatically executed if DOM is ready
 	 */
 	$(function() {
-		$('.anchor').anchor('init');
+		$('a[href*=#]').anchor('init');
 	});
 	
 }(jQuery));
