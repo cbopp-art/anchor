@@ -73,7 +73,7 @@
 		 * @return	{void}
 		 */
 		jumpTo : function(topOffsetPosition, settings) {
-			var $viewport = $('html');
+			var $viewport = $('html, body');
 
 			$viewport.animate(
 				{scrollTop: topOffsetPosition},
