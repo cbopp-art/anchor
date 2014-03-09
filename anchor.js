@@ -1,6 +1,6 @@
 /**
  * anchor.js - jQuery Plugin
- * Jumps smoothly to a specific section
+ * Jump to a specific section smoothly
  *
  * @dependencies	jQuery v1.5.0 http://jquery.com
  * @author			Cornel Boppart <cornel@bopp-art.com>
