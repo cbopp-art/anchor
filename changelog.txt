@@ -1,2 +1,6 @@
-2014/02/04 - v1.0.1
+2014/03/09 - v1.0.1
+Feature: Use all native section links
+Bugfix: Viewport definition
+
+2014/02/04 - v1.0.0
 Initial release
