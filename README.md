@@ -5,7 +5,7 @@ This small but might really useful [jQuery](http://www.jquery.com) Plugin brings
 
 ###Demo
 Check out a short example of the anchor.js:<br>
-http://jsfiddle.net/psrRQ/1/
+http://jsfiddle.net/psrRQ/3/
 
 ###Installation
 Just include the `anchor.js` and `anchor.init.js` file and also make sure that jQuery is defined.
