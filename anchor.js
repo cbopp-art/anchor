@@ -6,7 +6,7 @@
  * @author			Cornel Boppart <cornel@bopp-art.com>
  * @copyright		Author
  
- * @version		1.0.1 (09/03/2014)
+ * @version		1.0.2 (19/04/2014)
  */
 
 ;(function($) {
@@ -47,7 +47,7 @@
 				);
 			});
 		},
-		
+
 		/**
 		 * Gets the top offset position
 		 *
@@ -56,13 +56,18 @@
 		 */
 		getTopOffsetPosition : function($object) {
 			var href = $object.attr('href'),
-				$section = $($(href).get(0));
-				
+				$section = $($(href).get(0)),
+				browserHeight = $(window).height();
+
 			if (!$section || $section.length < 1) {
 				throw new ReferenceError(anchor.settings.labels.error);
 			}
-			
-			return $section.offset().top;
+
+			if (($section.offset().top + browserHeight) > document.body.clientHeight) {
+				return document.body.clientHeight - browserHeight;
+			} else {
+				return $section.offset().top;
+			}
 		},
 		
 		/**
@@ -88,9 +93,9 @@
 				}
 			});
 		}
-		
+
 	};
-	
+
 	$.fn.anchor = function(method) {
 			// Method calling logic
 		if (anchor[method]) {
@@ -101,5 +106,5 @@
 			return $.error('Method ' + method + ' does not exist on jQuery.anchor');
 		}
 	};
-	
+
 }(jQuery));
