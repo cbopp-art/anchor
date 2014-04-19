@@ -57,14 +57,15 @@
 		getTopOffsetPosition : function($object) {
 			var href = $object.attr('href'),
 				$section = $($(href).get(0)),
+				documentHeight = $('html').height(),
 				browserHeight = $(window).height();
 
 			if (!$section || $section.length < 1) {
 				throw new ReferenceError(anchor.settings.labels.error);
 			}
 
-			if (($section.offset().top + browserHeight) > document.body.clientHeight) {
-				return document.body.clientHeight - browserHeight;
+			if (($section.offset().top + browserHeight) > documentHeight) {
+				return documentHeight - browserHeight;
 			} else {
 				return $section.offset().top;
 			}
