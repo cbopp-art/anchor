@@ -1,3 +1,6 @@
+2014/06/24 - v1.0.3
+Bugfix: Fixed not working browser height in IE9
+
 2014/04/19 - v1.0.2
 Feature: Find maximum offset to jump at
 
