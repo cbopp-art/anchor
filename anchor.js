@@ -58,7 +58,7 @@
 			var href = $object.attr('href'),
 				$section = $($(href).get(0)),
 				documentHeight = $('html').height(),
-				browserHeight = $(window).height();
+				browserHeight = $('body').height();
 
 			if (!$section || $section.length < 1) {
 				throw new ReferenceError(anchor.settings.labels.error);
