@@ -1,3 +1,6 @@
+2014/08/28 - v1.0.4
+Bugfix: Fixed not working browser height
+
 2014/06/24 - v1.0.3
 Bugfix: Fixed not working browser height in IE9
 
