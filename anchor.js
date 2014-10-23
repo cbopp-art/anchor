@@ -9,7 +9,7 @@
  * @version		1.0.5 (23/10/2014)
  */
 
-;(function($) {
+;(function ($) {
 	
 	window.anchor = {
 		
@@ -28,21 +28,23 @@
 		/**
 		 * Initializes the plugin
 		 *
-		 * @param	{object}	options		The plugin options (Merged with default settings)
-		 * @return	{void}
+		 * @param	{object}	options	The plugin options (Merged with default settings)
+		 * @return	{object}	this	The current element itself
 		 */
 		init : function (options) {
-				// Apply merged settings to the current object
-			this.data('settings', $.extend(anchor.settings, options));
+			// Apply merged settings to the current object
+			$(this).data('settings', $.extend(anchor.settings, options));
 
-			this.unbind('click').click(function (event) {
+			return this.each(function () {
 				var $this = $(this);
-				
-				event.preventDefault();
-				anchor.jumpTo(
-					anchor.getTopOffsetPosition($this),
-					$this.data('settings')
-				);
+
+				$this.unbind('click').click(function (event) {
+					event.preventDefault();
+					anchor.jumpTo(
+						anchor.getTopOffsetPosition($this),
+						$this.data('settings')
+					);
+				});
 			});
 		},
 
