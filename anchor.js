@@ -32,12 +32,10 @@
 		 * @return	{void}
 		 */
 		init : function(options) {
-			var $this = $(this);
-
 				// Apply merged settings to the current object
-			$this.data('settings', $.extend(anchor.settings, options));
+			this.data('settings', $.extend(anchor.settings, options));
 
-			$(this).unbind('click').click(function(event) {
+			this.unbind('click').click(function(event) {
 				event.preventDefault();
 				var $this = $(this);
 
