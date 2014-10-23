@@ -31,11 +31,11 @@
 		 * @param	{object}	options		The plugin options (Merged with default settings)
 		 * @return	{void}
 		 */
-		init : function(options) {
+		init : function (options) {
 				// Apply merged settings to the current object
 			this.data('settings', $.extend(anchor.settings, options));
 
-			this.unbind('click').click(function(event) {
+			this.unbind('click').click(function (event) {
 				var $this = $(this);
 				
 				event.preventDefault();
@@ -52,7 +52,7 @@
 		 * @param	{object}	$object				The root object to get sections position from
 		 * @return	{int}		topOffsetPosition	The top offset position
 		 */
-		getTopOffsetPosition : function($object) {
+		getTopOffsetPosition : function ($object) {
 			var href = $object.attr('href'),
 				$section = $($(href).get(0)),
 				documentHeight = $(document).height(),
@@ -76,7 +76,7 @@
 		 * @param	{object}	settings			The object specific settings
 		 * @return	{void}
 		 */
-		jumpTo : function(topOffsetPosition, settings) {
+		jumpTo : function (topOffsetPosition, settings) {
 			var $viewport = $('html, body');
 
 			$viewport.animate(
@@ -95,7 +95,7 @@
 
 	};
 
-	$.fn.anchor = function(method) {
+	$.fn.anchor = function (method) {
 			// Method calling logic
 		if (anchor[method]) {
 			return anchor[method].apply(this, Array.prototype.slice.call(arguments, 1));
