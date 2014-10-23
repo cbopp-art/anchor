@@ -17,11 +17,11 @@
 		 * Default settings
 		 *
 		 */
-		settings : {
-			transitionDuration : 2000,
-			transitionTimingFunction : 'swing',
-			labels : {
-				error : 'Couldn\'t find any section'
+		settings: {
+			transitionDuration: 2000,
+			transitionTimingFunction: 'swing',
+			labels: {
+				error: 'Couldn\'t find any section'
 			}
 		},
 
@@ -31,7 +31,7 @@
 		 * @param	{object}	options	The plugin options (Merged with default settings)
 		 * @return	{object}	this	The current element itself
 		 */
-		init : function (options) {
+		init: function (options) {
 			// Apply merged settings to the current object
 			$(this).data('settings', $.extend(anchor.settings, options));
 
@@ -54,7 +54,7 @@
 		 * @param	{object}	$object				The root object to get sections position from
 		 * @return	{int}		topOffsetPosition	The top offset position
 		 */
-		getTopOffsetPosition : function ($object) {
+		getTopOffsetPosition: function ($object) {
 			var href = $object.attr('href'),
 				$section = $($(href).get(0)),
 				documentHeight = $(document).height(),
@@ -78,7 +78,7 @@
 		 * @param	{object}	settings			The object specific settings
 		 * @return	{void}
 		 */
-		jumpTo : function (topOffsetPosition, settings) {
+		jumpTo: function (topOffsetPosition, settings) {
 			var $viewport = $('html, body');
 
 			$viewport.animate(
