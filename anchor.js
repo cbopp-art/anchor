@@ -36,9 +36,9 @@
 			this.data('settings', $.extend(anchor.settings, options));
 
 			this.unbind('click').click(function(event) {
-				event.preventDefault();
 				var $this = $(this);
-
+				
+				event.preventDefault();
 				anchor.jumpTo(
 					anchor.getTopOffsetPosition($this),
 					$this.data('settings')
@@ -106,4 +106,4 @@
 		}
 	};
 
-}(jQuery));
+})(jQuery);
