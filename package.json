@@ -3,7 +3,7 @@
   "description": "This small but might really useful jQuery Plugin brings in an animation to all native section link and smoothly jumps at an element anywhere on your page.",
   "keywords": [
     "jquery-plugin",
-	"section",
+    "section",
     "link",
     "anchor",
     "animation"
@@ -15,7 +15,7 @@
   "author": "Cornel Boppart (https://github.com/cbopp-art)",
   "license": "GPL-2.0+",
   "main": "anchor.js",
-  "homepage": "http://cornel.bopp-art.com/anchor/",
+  "homepage": "http://cornel.bopp-art.com/",
   "repository": {
     "type": "git",
     "url": "https://github.com/cbopp-art/anchor.git"
