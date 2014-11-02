@@ -6,7 +6,7 @@
  * @author			Cornel Boppart <cornel@bopp-art.com>
  * @copyright		Author
  
- * @version		1.0.5 (23/10/2014)
+ * @version		1.0.5 (02/11/2014)
  */
 
 ;(function ($) {
@@ -58,7 +58,7 @@
 			var href = $object.attr('href'),
 				$section = $($(href).get(0)),
 				documentHeight = $(document).height(),
-				browserHeight = document.documentElement.clientHeight;
+				browserHeight = $(window).height();
 
 			if (!$section || $section.length < 1) {
 				throw new ReferenceError(anchor.settings.labels.error);

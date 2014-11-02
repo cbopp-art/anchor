@@ -1,4 +1,5 @@
-2014/10/23 - v1.0.5
+2014/11/02 - v1.0.5
+Changed: More elegant way to get browser height
 Cleanup: Added space between anonymous function and params
 Cleanup: Changed position of the jQuery call argument
 
