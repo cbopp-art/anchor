@@ -13,7 +13,7 @@ Just include the `anchor.js` file and also make sure that jQuery is defined. The
 ```javascript
 <script type="text/javascript" src="path/to/your/anchor.js"></script>
 <script type="text/javascript">
-$(function() {
+$(function () {
     $('a[href*=#]').anchor({
         foo: 'bar'
     });
