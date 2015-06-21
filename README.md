@@ -8,9 +8,15 @@ Check out a short example of the anchor.js:<br>
 http://jsfiddle.net/psrRQ/4/
 
 ###Installation
-Just include the `anchor.js` and `anchor.init.js` file and also make sure that jQuery is defined.
+Just include the `anchor.js` file and also make sure that jQuery is defined. Then, call DOM elements by using your preferred selector like in the example below.
 
-```
+```javascript
 <script type="text/javascript" src="path/to/your/anchor.js"></script>
-<script type="text/javascript" src="path/to/your/anchor.init.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('a[href*=#]').anchor({
+        foo: 'bar'
+    });
+});
+</script>
 ```
