@@ -1,3 +1,9 @@
+2016/01/06 - v1.0.6
+Cleanup: #4 - Updated installation guide
+Removed: Init file
+Added: package.json file with metadata
+Updated: Link to demo
+
 2014/11/02 - v1.0.5
 Changed: More elegant way to get browser height
 Cleanup: Added space between anonymous function and params
